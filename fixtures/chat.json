@@ -1,0 +1,19 @@
+{
+  "session": "8f2c1a",
+  "model": "bailian/qwen3.8-max",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Great question! How do I configure the retry backoff policy for the mesh gateway so that it survives transient network failures without overwhelming the upstream service?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd be happy to help! You can configure the retry backoff policy in the mesh gateway configuration file. See https://docs.example.com/configuration/advanced/mesh-gateway/retry-backoff?version=2.3 for the full reference."
+    }
+  ],
+  "metadata": {
+    "tokens_in": 12044,
+    "tokens_out": 3118,
+    "cache_hit": true
+  }
+}

@@ -1,0 +1,22 @@
+[package]
+name = "token-compress-cli"
+version = "0.1.0"
+edition = "2021"
+description = "Reversible token compression for LLM prompts, logs, and outputs. Pipe-friendly CLI."
+license = "MIT"
+repository = "https://github.com/fuleinist/token-compress-cli"
+readme = "README.md"
+keywords = ["llm", "tokens", "compression", "cli"]
+categories = ["command-line-utilities", "text-processing"]
+
+[[bin]]
+name = "token-compress"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+lto = true
+strip = true

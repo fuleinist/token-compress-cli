@@ -1,0 +1,11 @@
+This text contains raw markers that must survive round-trip:
+⟦ this opens one ⟧ and this closes it.
+⟦ESC⟧ looks like an escape sequence.
+⟦U1⟧ looks like a URL marker.
+⟦F0⟧ looks like a filler marker.
+⟦REP 3×⟧ looks like a dedup marker.
+⟦REP 3×⟧
+⟦REP 3×⟧
+⟦TCMAP v1 stages=ws⟧ looks like a footer header.
+⟦/TCMAP⟧ looks like a footer close.
+Nested: ⟦⟦⟧⟧ and ⟦ESC⟧ESC⟧ and a{"weird":"json ⟦ mix"}

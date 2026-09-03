@@ -1,0 +1,10 @@
+The deployment pipeline is a fairly complex beast.   It has multiple stages,  each of which
+must be carefully orchestrated  in order to ensure that everything works correctly.
+
+First,  we build the artifacts.   Then we run the tests.    After that,  we push the images
+to the registry.  Finally,   we roll out the changes to each environment in sequence.
+
+If anything goes wrong,  the system should automatically roll back to the previous version.
+This is important because   we cannot afford to have broken builds in production.
+
+Remember:  measure twice,   cut once.   Slow is smooth,    and smooth is fast.
